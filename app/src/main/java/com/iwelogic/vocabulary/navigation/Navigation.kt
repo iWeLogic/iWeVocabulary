@@ -11,8 +11,12 @@ import com.iwelogic.vocabulary.ui.onboarding.OnboardingScreen
 fun AppNavigation(navController: NavHostController) {
 
     NavHost(navController = navController, startDestination = Routes.Onboarding.route) {
+
         composable(Routes.Onboarding.route) {
             OnboardingScreen(navController)
+        }
+        composable(Routes.Login.route) {
+            MainScreen()
         }
         composable(Routes.Main.route) {
             MainScreen()
