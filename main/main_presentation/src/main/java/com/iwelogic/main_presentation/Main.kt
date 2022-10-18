@@ -1,4 +1,4 @@
-package com.iwelogic.vocabulary.ui.main
+package com.iwelogic.main_presentation
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

@@ -6,14 +6,15 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId = "com.iwelogic.vocabulary"
-        minSdk = 23
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = ProjectConfig.appId
+        minSdk = ProjectConfig.minSdk
+        targetSdk = ProjectConfig.targetSdk
+        versionCode = ProjectConfig.versionCode
+        versionName = ProjectConfig.versionName
+
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -51,8 +52,8 @@ dependencies {
 
     implementation(project(Modules.core))
     implementation(project(Modules.onboardingPresentation))
-    implementation(project(Modules.onboardingDomain))
-    implementation(project(Modules.onboardingData))
+    implementation(project(Modules.loginPresentation))
+    implementation(project(Modules.mainPresentation))
 
     implementation(AndroidX.coreKtx)
     implementation(Compose.ui)

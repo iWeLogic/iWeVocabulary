@@ -28,12 +28,12 @@ import kotlinx.coroutines.launch
 import com.iwelogic.core.R
 
 @Composable
-fun OnboardingScreen(navHostController: NavHostController, onClickOpenMain: () -> Unit) {
-    OnboardingContent(navHostController, onClickOpenMain)
+fun OnboardingScreen(onClickOpenMain: () -> Unit) {
+    OnboardingContent(onClickOpenMain)
 }
 
 @Composable
-fun OnboardingContent(navHostController: NavHostController, onClickOpenMain: () -> Unit) {
+fun OnboardingContent(onClickOpenMain: () -> Unit) {
 
     Column {
         val scope = rememberCoroutineScope()

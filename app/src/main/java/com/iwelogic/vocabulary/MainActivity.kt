@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
 import com.iwelogic.vocabulary.navigation.AppNavigation
+import com.iwelogic.vocabulary.navigation.Routes
 import com.iwelogic.vocabulary.theme.IWeVocabularyTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,8 +13,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             IWeVocabularyTheme {
-                val navController = rememberNavController()
-                AppNavigation(navController = navController)
+                AppNavigation(navController = rememberNavController(), Routes.Main)
             }
         }
     }
