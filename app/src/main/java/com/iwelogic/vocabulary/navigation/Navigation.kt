@@ -23,9 +23,9 @@ fun AppNavigation(navController: NavHostController, startDestination: Routes) {
             SignUpScreen()
         }
         composable(Routes.Login.route) {
-            LoginScreen {
+            LoginScreen({
                 navController.navigate(Routes.SignUp.route)
-            }
+            })
         }
         composable(Routes.Main.route) {
             MainScreen()

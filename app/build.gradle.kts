@@ -53,6 +53,8 @@ dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.onboardingPresentation))
     implementation(project(Modules.loginPresentation))
+    implementation(project(Modules.loginDomain))
+    implementation(project(Modules.loginData))
     implementation(project(Modules.mainPresentation))
 
     implementation(AndroidX.coreKtx)
